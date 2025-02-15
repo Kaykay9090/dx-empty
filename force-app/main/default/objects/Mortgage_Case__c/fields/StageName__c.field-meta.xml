@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StageName__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Stage</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Factfind ongoing</fullName>
+                <default>false</default>
+                <label>Factfind ongoing</label>
+            </value>
+            <value>
+                <fullName>Factfind submitted</fullName>
+                <default>false</default>
+                <label>Factfind submitted</label>
+            </value>
+            <value>
+                <fullName>Recommendations</fullName>
+                <default>false</default>
+                <label>Recommendations</label>
+            </value>
+            <value>
+                <fullName>DIP obtained</fullName>
+                <default>false</default>
+                <label>DIP obtained</label>
+            </value>
+            <value>
+                <fullName>FMA submitted</fullName>
+                <default>false</default>
+                <label>FMA submitted</label>
+            </value>
+            <value>
+                <fullName>Valuation instructed</fullName>
+                <default>false</default>
+                <label>Valuation instructed</label>
+            </value>
+            <value>
+                <fullName>Valuation satisfied</fullName>
+                <default>false</default>
+                <label>Valuation satisfied</label>
+            </value>
+            <value>
+                <fullName>Case offered</fullName>
+                <default>false</default>
+                <label>Case offered</label>
+            </value>
+            <value>
+                <fullName>Completed</fullName>
+                <default>false</default>
+                <label>Completed</label>
+            </value>
+            <value>
+                <fullName>Closed Lost</fullName>
+                <default>false</default>
+                <label>Closed Lost</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

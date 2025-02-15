@@ -1,0 +1,49 @@
+<aura:component controller="MWDataSync"
+    implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction"
+    access="global">
+
+
+    <aura:handler name="init" value="{!this}" action="{!c.init}"/>
+
+    <aura:attribute name="selectedOption" type="String" />
+    <aura:attribute name="notificationMessage" type="String" default="Gotchya details. Currently reviewing..." />
+    <aura:attribute name="firstApplicant" type="String" />
+    <aura:attribute name="secondApplicant" type="String" />
+
+    <div class="slds-card slds-p-around_medium">
+        <div class="slds-card__header slds-grid slds-grid_align-spread">
+            <h2 class="slds-text-heading_medium">Select Notification Type</h2>
+        </div>
+        <div class="slds-card__body">
+            <lightning:select aura:id="selectOption" onchange="{!c.handleChange}">
+                <option value="Case Assigned" selected="true">Case Assigned</option>
+                <option value="Meet your advisor tomorrow">Meet your advisor tomorrow</option>
+                <option value="Meet your advisor today">Meet your advisor today</option>
+                <option value="Documents Pending">Documents Pending</option>
+                <option value="Mortgage renewal reminder">Mortgage rene reminder</option>
+            </lightning:select>
+            <div class="slds-m-vertical_medium"></div>
+            <lightning:textarea aura:id="textField" value="{!v.notificationMessage}" maxlength="80" />
+            <div class="slds-m-vertical_medium"></div>
+            
+
+            <div>
+                <aura:if isTrue="{!and(v.firstApplicant, v.secondApplicant)}">
+                <div>
+                    <lightning:select onchange="{selectHandler}">
+                        <option value="Both" selected="selected">Both</option>
+                        <option value="First">{!v.firstApplicant}</option>
+                        <option value="Second">{!v.secondApplicant}</option>
+                    </lightning:select>
+                </div>
+            </aura:if>
+            </div>
+
+            <div class="slds-m-vertical_medium"></div>
+            <lightning:button label="Send Notification" onclick="{!c.handleSendNotification}"
+                class="slds-button slds-button_brand" />
+
+
+        </div>
+    </div>
+</aura:component>

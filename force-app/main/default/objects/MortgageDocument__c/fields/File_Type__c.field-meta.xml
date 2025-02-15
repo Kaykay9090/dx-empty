@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>File_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <label>File Type</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Passport</fullName>
+                <default>false</default>
+                <label>Passport</label>
+            </value>
+            <value>
+                <fullName>Payslips</fullName>
+                <default>false</default>
+                <label>Payslips</label>
+            </value>
+            <value>
+                <fullName>Pension</fullName>
+                <default>false</default>
+                <label>Pension</label>
+            </value>
+            <value>
+                <fullName>Proof_of_Address</fullName>
+                <default>false</default>
+                <label>Proof of Address</label>
+            </value>
+            <value>
+                <fullName>Proof_of_deposit</fullName>
+                <default>false</default>
+                <label>Proof of deposit</label>
+            </value>
+            <value>
+                <fullName>Gifted_deposit_letter</fullName>
+                <default>false</default>
+                <label>Gifted deposit letter</label>
+            </value>
+            <value>
+                <fullName>P60</fullName>
+                <default>false</default>
+                <label>P60</label>
+            </value>
+            <value>
+                <fullName>Recent_CV</fullName>
+                <default>false</default>
+                <label>Recent CV</label>
+            </value>
+            <value>
+                <fullName>Residence_Permit</fullName>
+                <default>false</default>
+                <label>Residence permit</label>
+            </value>
+            <value>
+                <fullName>SA302</fullName>
+                <default>false</default>
+                <label>SA302</label>
+            </value>
+            <value>
+                <fullName>Bank_statement</fullName>
+                <default>false</default>
+                <label>Bank statement</label>
+            </value>
+            <value>
+                <fullName>Tax_overview</fullName>
+                <default>false</default>
+                <label>Tax overview</label>
+            </value>
+            <value>
+                <fullName>Employment_contract</fullName>
+                <default>false</default>
+                <label>Employment contract</label>
+            </value>
+            <value>
+                <fullName>Credit_report</fullName>
+                <default>false</default>
+                <label>Credit report</label>
+            </value>
+            <value>
+                <fullName>Signed_AST_agreement</fullName>
+                <default>false</default>
+                <label>Signed AST agreement</label>
+            </value>
+            <value>
+                <fullName>ARLA`_letter</fullName>
+                <default>false</default>
+                <label>ARLA letter</label>
+            </value>
+            <value>
+                <fullName>Signed_accounts</fullName>
+                <default>false</default>
+                <label>Signed accounts</label>
+            </value>
+            <value>
+                <fullName>Accountants_reference</fullName>
+                <default>false</default>
+                <label>Accountant&apos;s reference</label>
+            </value>
+            <value>
+                <fullName>Evidence_of_bonus</fullName>
+                <default>false</default>
+                <label>Evidence of bonus</label>
+            </value>
+            <value>
+                <fullName>National_ID_document</fullName>
+                <default>false</default>
+                <label>National ID document</label>
+            </value>
+            <value>
+                <fullName>Driving_license</fullName>
+                <default>false</default>
+                <label>Driving license</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+            <value>
+                <fullName>Agreements</fullName>
+                <default>false</default>
+                <label>Agreements</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

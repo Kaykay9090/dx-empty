@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Affordability</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Affordability</value>
+    </caseValues>
+    <layouts>
+        <layout>Affordability Layout</layout>
+        <sections>
+            <label></label>
+            <section>Children</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Expenditure</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Household</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lifestyle</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Living Expenses</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Transport Costs</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

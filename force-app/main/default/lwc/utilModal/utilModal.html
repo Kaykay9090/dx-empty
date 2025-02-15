@@ -1,0 +1,219 @@
+<template>
+    <template if:true={showModal}>
+        <div>
+            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+                aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+                <div class="slds-modal__container" style="align-items: center;">
+                    <header class="slds-modal__header" style="min-width: 1100px;">
+                        <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+                            title="Close" onclick={handleClose}>
+                            <lightning-icon icon-name="utility:close" alternative-text="close" variant="warning"></lightning-icon>
+                            <span class="slds-assistive-text">Close</span>
+                        </button>
+                        <slot name="header">
+                            <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Affordability Expenses Detailed</h2>
+                        </slot>
+                    </header>
+                    <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1" style="min-width: 1100px;">
+                        <!-- <slot name="body">
+                            <p>£{bodyContent}</p>
+                        </slot> -->                        
+
+                        <!-- <div class="category-container center-content">
+                            <p class="category-value" style="color: rgb(6, 18, 195);">£{bodyContent}</p>
+                            <p style="padding-bottom: 15px;">Total</p>
+                        </div> -->
+                        
+                        <!-- Household -->
+                        <lightning-accordion allow-multiple-sections-open active-section-name="">
+                            <lightning-accordion-section name="Household" label="Household">
+
+                                <div class="slds-grid slds-wrap slds-grid_align-center slds-m-around_medium">
+                                    <!-- Mortgage Rent -->
+                                    <div class="slds-col slds-size_1-of-3 slds-p-around_medium center-content">
+                                        <!-- <p class="metric metric-household" data-section="mortgageRent">£{triggeredRecord.Mortgage_Rent_Sum__c}</p>
+                                        <p>Mortgage Rent</p>
+                                        <a style="font-size: 10px;" data-section="household">View Details</a> -->
+                                        <lightning-input data-id="mortgageRent" label="Mortgage Rent" value={triggeredRecord.Mortgage_Rent_Sum__c} style="margin-top: 10px;" type="number" step="0.01" min="0" required></lightning-input>
+                                    </div>
+                        
+                                    <!-- Council Tax -->
+                                    <div class="slds-col slds-size_1-of-3 slds-p-around_medium center-content">
+                                        <!-- <p class="metric metric-living" data-section="councilTax">£{triggeredRecord.Council_Tax_Sum__c}</p>
+                                        <p>Council Tax</p>
+                                        <a style="font-size: 10px;" data-section="living">View Details</a> -->
+                                        <lightning-input data-id="councilTax" label="Council Tax" value={triggeredRecord.Council_Tax_Sum__c} style="margin-top: 10px;" type="number" step="0.01" min="0" required></lightning-input>
+                                    </div>
+                        
+                                    <!-- Utilities -->
+                                    <div class="slds-col slds-size_1-of-3 slds-p-around_medium center-content">
+                                        <!-- <p class="metric metric-lifestyle" data-section="utilities">£{triggeredRecord.Utilities_Sum__c}</p>
+                                        <p>Utiities</p>
+                                        <a style="font-size: 10px;" data-section="lifestyle">View Details</a> -->
+                                        <lightning-input data-id="utilities" label="Utilities" value={triggeredRecord.Utilities_Sum__c} style="margin-top: 10px;" type="number" step="0.01" min="0" required></lightning-input>
+                                    </div>
+                                </div>
+
+                                <template for:each={affordabilityRecords} for:item="record" for:index="index">
+                                    <lightning-accordion-section key={record.Id} label={record.Name}>
+                                        
+                                        <!-- <template if:true={fieldLabels.length}>
+                                            <template for:each={fieldLabels} for:item="label" for:index="innerIndex">
+                                                <lightning-input 
+                                                    key={label} 
+                                                    label={label} 
+                                                    value={record.innerIndex} 
+                                                    data-field={innerIndex}>
+                                                </lightning-input>
+                                            </template>
+                                        </template>
+                                        <p if:true={hasNoFields}>No fields to display for this summary.</p> -->
+
+                                        <lightning-input label="Mortgage Rent" value={record.Mortgage_rent__c}></lightning-input>
+                                        <lightning-input label="Council Tax" value={record.Council_Tax__c}></lightning-input>
+                                        <lightning-input label="Utilities" value={record.Utilities__c}></lightning-input>
+                                    </lightning-accordion-section>
+                                </template>
+                            </lightning-accordion-section>
+                        </lightning-accordion>  
+                        
+                        <!-- Living -->
+                        <lightning-accordion allow-multiple-sections-open active-section-name="">
+                            <lightning-accordion-section name="Living" label="Living">
+                                <div class="slds-grid slds-wrap slds-grid_align-center slds-m-around_medium">
+                                    <!-- Clothing -->
+                                    <div class="slds-col slds-size_1-of-3 slds-p-around_medium center-content">
+                                        <!-- <p class="metric metric-children" data-section="clothing">£{triggeredRecord.Clothing_Sum__c}</p>
+                                        <p>Clothing</p>
+                                        <a style="font-size: 10px;" data-section="living">View Details</a> -->
+                                        <lightning-input data-id="clothing" label="Clothing" value={triggeredRecord.Clothing_Sum__c} style="margin-top: 10px;" type="number" step="0.01" min="0" required></lightning-input>
+                                    </div>
+                        
+                                    <!-- Groceries -->
+                                    <div class="slds-col slds-size_1-of-3 slds-p-around_medium center-content">
+                                        <!-- <p class="metric metric-lifestyle" data-section="groceries">£{triggeredRecord.Groceries_Sum__c}</p>
+                                        <p>Groceries</p>
+                                        <a style="font-size: 10px;" data-section="living">View Details</a> -->
+                                        <lightning-input data-id="groceries" label="Groceries" value={triggeredRecord.Groceries_Sum__c} style="margin-top: 10px;" type="number" step="0.01" min="0" required></lightning-input>
+                                    </div>
+                        
+                                    <!-- TV/Internet Communication -->
+                                    <div class="slds-col slds-size_1-of-3 slds-p-around_medium center-content">
+                                        <!-- <p class="metric metric-household" data-section="tvinternetcomm">£{triggeredRecord.TV_Internet_Communication_Sum__c}</p>
+                                        <p>TV/Internet Communication</p>
+                                        <a style="font-size: 10px;" data-section="living">View Details</a> -->
+                                        <lightning-input data-id="tvinternetcomm" label="TV/Internet Communication" value={triggeredRecord.TV_Internet_Communication_Sum__c} style="margin-top: 10px;" type="number" step="0.01" min="0" required></lightning-input>
+                                    </div>
+                                </div>
+                            </lightning-accordion-section>
+                        </lightning-accordion> 
+                        
+                        <!-- Lifestyle -->
+                        <lightning-accordion allow-multiple-sections-open active-section-name="">
+                            <lightning-accordion-section name="Lifestyle" label="Lifestyle">
+                                <div class="slds-grid slds-wrap slds-grid_align-center slds-m-around_medium">
+                                    <!-- Leisure -->
+                                    <div class="slds-col slds-size_1-of-3 slds-p-around_medium center-content">
+                                        <!-- <p class="metric metric-transport" data-section="leisure">£{triggeredRecord.Leisure_Sum__c}</p>
+                                        <p>Leisure</p>
+                                        <a style="font-size: 10px;" data-section="lifestyle">View Details</a> -->
+                                        <lightning-input data-id="leisure" label="Leisure" value={triggeredRecord.Leisure_Sum__c} style="margin-top: 10px;" type="number" step="0.01" min="0" required></lightning-input>
+                                    </div>
+                        
+                                    <!-- Entertainment -->
+                                    <div class="slds-col slds-size_1-of-3 slds-p-around_medium center-content">
+                                        <!-- <p class="metric metric-children" data-section="entertainment">£{triggeredRecord.Entertainment_Sum__c}</p>
+                                        <p>Entertainment</p>
+                                        <a style="font-size: 10px;" data-section="lifestyle">View Details</a> -->
+                                        <lightning-input data-id="entertainment" label="Entertainment" value={triggeredRecord.Entertainment_Sum__c} style="margin-top: 10px;" type="number" step="0.01" min="0" required></lightning-input>
+                                    </div>
+                        
+                                    <!-- Gambling -->
+                                    <div class="slds-col slds-size_1-of-3 slds-p-around_medium center-content">
+                                        <!-- <p class="metric metric-lifestyle" data-section="gambling">£{triggeredRecord.Gambling_Sum__c}</p>
+                                        <p>Gambling</p>
+                                        <a style="font-size: 10px;" data-section="lifestyle">View Details</a> -->
+                                        <lightning-input data-id="gambling" label="Gambling" value={triggeredRecord.Gambling_Sum__c} style="margin-top: 10px;" type="number" step="0.01" min="0" required></lightning-input>
+                                    </div>
+
+                                    <!-- Insurances -->
+                                    <div class="slds-col slds-size_1-of-3 slds-p-around_medium center-content">
+                                        <!-- <p class="metric metric-lifestyle" data-section="insurances">£{triggeredRecord.Insurances_Sum__c}</p>
+                                        <p>Insurances</p>
+                                        <a style="font-size: 10px;" data-section="lifestyle">View Details</a> -->
+                                        <lightning-input data-id="insurances" label="Insurances" value={triggeredRecord.Insurances_Sum__c} style="margin-top: 10px;" type="number" step="0.01" min="0" required></lightning-input>
+                                    </div>
+                        
+                                    <!-- Investments -->
+                                    <div class="slds-col slds-size_1-of-3 slds-p-around_medium center-content">
+                                        <!-- <p class="metric metric-household" data-section="investments">£{triggeredRecord.Investments_Sum__c}</p>
+                                        <p>Investments</p>
+                                        <a style="font-size: 10px;" data-section="lifestyle">View Details</a> -->
+                                        <lightning-input data-id="investments" label="Investments" value={triggeredRecord.Investments_Sum__c} style="margin-top: 10px;" type="number" step="0.01" min="0" required></lightning-input>
+                                    </div>
+                        
+                                    <!-- Sports -->
+                                    <div class="slds-col slds-size_1-of-3 slds-p-around_medium center-content">
+                                        <!-- <p class="metric metric-living" data-section="sports">£{triggeredRecord.Sports_Sum__c}</p>
+                                        <p>Sports</p>
+                                        <a style="font-size: 10px;" data-section="lifestyle">View Details</a> -->
+                                        <lightning-input data-id="sports" label="Sports" value={triggeredRecord.Sports_Sum__c} style="margin-top: 10px;" type="number" step="0.01" min="0" required></lightning-input>
+                                    </div>
+                        
+                                    <!-- Travel -->
+                                    <div class="slds-col slds-size_1-of-3 slds-p-around_medium center-content">
+                                        <!-- <p class="metric metric-lifestyle" data-section="travel">£{triggeredRecord.Travel_Sum__c}</p>
+                                        <p>Travel</p>
+                                        <a style="font-size: 10px;" data-section="lifestyle">View Details</a> -->
+                                        <lightning-input data-id="travel" label="Travel" value={triggeredRecord.Travel_Sum__c} style="margin-top: 10px;" type="number" step="0.01" min="0" required></lightning-input>
+                                    </div>
+                                </div>
+                            </lightning-accordion-section>
+                        </lightning-accordion>
+                        
+                        <!-- Transport -->
+                        <lightning-accordion allow-multiple-sections-open active-section-name="">
+                            <lightning-accordion-section name="Transport" label="Transport">
+                                <div class="slds-grid slds-wrap slds-grid_align-center slds-m-around_medium">
+                                    <!-- Transport Travel -->
+                                    <div class="slds-col slds-size_1-of-3 slds-p-around_medium center-content">
+                                        <!-- <p class="metric metric-transport" data-section="transporttravel">£{triggeredRecord.Transport_Travel_Sum__c}</p>
+                                        <p>Transport Travel</p>
+                                        <a style="font-size: 10px;" data-section="transport">View Details</a> -->
+                                        <lightning-input data-id="transporttravel" label="Transport Travel" value={triggeredRecord.Transport_Travel_Sum__c} style="margin-top: 10px;" type="number" step="0.01" min="0" required></lightning-input>
+                                    </div>            
+                                </div>
+                            </lightning-accordion-section>
+                        </lightning-accordion>
+
+                        <!-- Children -->
+                        <lightning-accordion allow-multiple-sections-open active-section-name="">
+                            <lightning-accordion-section name="Children" label="Children">
+                                <div class="slds-grid slds-wrap slds-grid_align-center slds-m-around_medium">
+                                    <!-- Schooling -->
+                                    <div class="slds-col slds-size_1-of-3 slds-p-around_medium center-content">
+                                        <!-- <p class="metric metric-children" data-section="schooling">£{triggeredRecord.Schooling_Sum__c}</p>
+                                        <p>Schooling</p>
+                                        <a style="font-size: 10px;" data-section="children">View Details</a> -->
+                                        <lightning-input data-id="schooling" label="Schooling" value={triggeredRecord.Schooling_Sum__c} style="margin-top: 10px;" type="number" step="0.01" min="0" required></lightning-input>
+                                    </div>            
+                                </div>
+                            </lightning-accordion-section>
+                        </lightning-accordion>
+                    </div>
+
+
+                    <footer class="slds-modal__footer" style="min-width: 1100px;">
+                        <template if:true={showNegative}>
+                            <button class="slds-button slds-button_neutral" onclick={handleNegative}>{negativeButtonLabel}</button>
+                        </template>
+                        <template if:true={showPositive}>
+                            <button class="slds-button slds-button_brand" onclick={handlePositive}>{positiveButtonLabel}</button>
+                        </template>
+                    </footer>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open"></div>
+        </div>
+    </template>
+</template>

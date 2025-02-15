@@ -1,0 +1,151 @@
+<aura:component controller="MWDataSync" implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" access="global" >
+        <!-- Attribute to hold the years and months data -->
+    
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="years" type="List"/>
+    <aura:attribute name="months" type="List"/>
+    <aura:attribute name="year1" type="List"/>
+    <aura:attribute name="year2" type="List"/>
+    <aura:attribute name="year3" type="List"/>
+    <aura:attribute name="year4" type="List"/>
+    <aura:attribute name="year5" type="List"/>
+    <aura:attribute name="year6" type="List"/>
+
+   
+
+    <!-- Init handler to prepare data -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+    <!-- Table structure -->
+    <table class="slds-table slds-table_cell-buffer slds-table_bordered custom-table">
+        <thead>
+            <tr class="slds-line-height_reset">
+                <th scope="col">
+                    <!-- Empty top-left cell -->
+                </th>
+                <!-- Iterating over years to create column headers -->
+                <aura:iteration items="{!v.months}" var="month">
+                    <th scope="col" class="slds-text-align_center">
+                        {!month}
+                    </th>
+                </aura:iteration>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Iterating over months to create rows -->
+            <aura:iteration items="{!v.years}" var="year" indexVar="i">
+                <tr>
+                    <th scope="row" class="slds-text-align_left">
+                        {!year}
+                    </th>
+
+                    <aura:if isTrue="{!i == 0}">
+                        <aura:iteration items="{!v.year1}" var="item">
+                            <td class="{!item.color}">
+                                {!item.value}
+                            </td>
+                        </aura:iteration>
+                    </aura:if>
+
+                    <aura:if isTrue="{!i == 1}">
+                        <aura:iteration items="{!v.year2}" var="item">
+                            <td class="{!item.color}">
+                                {!item.value}
+                            </td>
+                        </aura:iteration>
+                    </aura:if>
+
+                    <aura:if isTrue="{!i == 2}">
+                        <aura:iteration items="{!v.year3}" var="item">
+                            <td class="{!item.color}">
+                                {!item.value}
+                            </td>
+                        </aura:iteration>
+                    </aura:if>
+
+                    <aura:if isTrue="{!i == 3}">
+                        <aura:iteration items="{!v.year4}" var="item">
+                            <td class="{!item.color}">
+                                {!item.value}
+                            </td>
+                        </aura:iteration>
+                    </aura:if>
+
+                    <aura:if isTrue="{!i == 4}">
+                        <aura:iteration items="{!v.year5}" var="item">
+                            <td class="{!item.color}">
+                                {!item.value}
+                            </td>
+                        </aura:iteration>
+                    </aura:if>
+
+                    <aura:if isTrue="{!i == 5}">
+                        <aura:iteration items="{!v.year6}" var="item">
+                            <td class="{!item.color}">
+                                {!item.value}
+                            </td>
+                        </aura:iteration>
+                    </aura:if>
+                </tr>
+            </aura:iteration>
+        </tbody>
+    </table>
+
+    <br />
+
+    <div class="slds-card slds-p-around_medium">
+        <ul class="legend">
+            <li class="legend-item">
+                <div class="legend-box blue">US</div>
+                <div>Unknown Status</div>
+            </li>
+            <li class="legend-item">
+                <div class="legend-box blue">U</div>
+                <div>Unclassified or recently opened account</div>
+            </li>
+            <li class="legend-item">
+                <div class="legend-box amber">1</div>
+                <div>1 Month Late or 1 Month in Arrears</div>
+            </li>
+            <li class="legend-item">
+                <div class="legend-box orange">2</div>
+                <div>2 Months Late or 2 Months in Arrears</div>
+            </li>
+
+            <li class="legend-item">
+                <div class="legend-box red">3</div>
+                <div>3 Months Late or 3 Months in Arrears</div>
+            </li>
+
+            <li class="legend-item">
+                <div class="legend-box red">4</div>
+                <div>4 Months Late or 4 Months in Arrears</div>
+            </li>
+
+            <li class="legend-item">
+                <div class="legend-box red">5</div>
+                <div>5 Months Late or 5 Months in Arrears</div>
+            </li>
+
+            <li class="legend-item">
+                <div class="legend-box red">6</div>
+                <div>6 Months Late or 6 Months in Arrears</div>
+            </li>
+
+            <li class="legend-item">
+                <div class="legend-box green">S</div>
+                <div>Settled/Closed</div>
+            </li>
+
+            <li class="legend-item">
+                <div class="legend-box green">OK</div>
+                <div>Payment made on Time</div>
+            </li>
+
+            <li class="legend-item">
+                <div class="legend-box orange">AR</div>
+                <div>Arrangement to Pay</div>
+            </li>
+        </ul>
+    </div>
+</aura:component>

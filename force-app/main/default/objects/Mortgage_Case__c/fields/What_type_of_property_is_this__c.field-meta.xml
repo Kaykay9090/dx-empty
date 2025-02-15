@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>What_type_of_property_is_this__c</fullName>
+    <deprecated>false</deprecated>
+    <label>What type of property is this?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Detached bungalow</fullName>
+                <default>false</default>
+                <label>Detached bungalow</label>
+            </value>
+            <value>
+                <fullName>Detached house</fullName>
+                <default>false</default>
+                <label>Detached house</label>
+            </value>
+            <value>
+                <fullName>Purpose built flat/ maisonette</fullName>
+                <default>false</default>
+                <label>Purpose built flat/ maisonette</label>
+            </value>
+            <value>
+                <fullName>Semi-detached bungalow</fullName>
+                <default>false</default>
+                <label>Semi-detached bungalow</label>
+            </value>
+            <value>
+                <fullName>Semi-detached house</fullName>
+                <default>false</default>
+                <label>Semi-detached house</label>
+            </value>
+            <value>
+                <fullName>Terraced house</fullName>
+                <default>false</default>
+                <label>Terraced house</label>
+            </value>
+            <value>
+                <fullName>Converted flat/ maisonette</fullName>
+                <default>false</default>
+                <label>Converted flat/ maisonette</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

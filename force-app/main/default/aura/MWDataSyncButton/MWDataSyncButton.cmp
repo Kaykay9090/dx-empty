@@ -1,0 +1,5 @@
+<aura:component controller="MWDataSync" implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" access="global" >
+    
+    <lightning:button variant="brand" label="MW Data Sync" title="MW Data Sync" onclick="{!c.handleClick}"/>
+	
+</aura:component>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Mortgage Case</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Mortgage Case</value>
+    </caseValues>
+    <layouts>
+        <layout>Mortgage Case Layout</layout>
+        <sections>
+            <label></label>
+            <section>Case Processing Timeline</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Company BTL Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>House Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>ID &amp; Doc Checks</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Missing Required fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Mortgage Requirements: Do you want</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Security Property Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Which of the following are important to you?</section>
+        </sections>
+    </layouts>
+    <sharingReasons>
+        <label></label>
+        <name>Permission_Matrix</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label></label>
+        <name>Universal_Bank_Member</name>
+    </sharingReasons>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

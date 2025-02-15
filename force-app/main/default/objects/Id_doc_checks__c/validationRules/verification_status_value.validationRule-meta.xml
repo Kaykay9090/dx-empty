@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>verification_status_value</fullName>
+    <active>false</active>
+    <description>The verification status field value can only be &quot;Complete&quot; When all the checks are checked.</description>
+    <errorConditionFormula>NOT(Bank_account_verification__c)  ||  NOT( Identity_authenticate_check__c )  ||  NOT(Aml_check__c)  ||  NOT(Identity_document_check__c)   ||  NOT(Income_verification__c)</errorConditionFormula>
+    <errorMessage>One more check is missing to mark it complete</errorMessage>
+</ValidationRule>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_client_may_be_vulnerable__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Reason client may be vulnerable</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Addiction</fullName>
+                <default>false</default>
+                <label>Addiction</label>
+            </value>
+            <value>
+                <fullName>Age</fullName>
+                <default>false</default>
+                <label>Age</label>
+            </value>
+            <value>
+                <fullName>Domestic Abuse</fullName>
+                <default>false</default>
+                <label>Domestic Abuse</label>
+            </value>
+            <value>
+                <fullName>Hearing or Visual Impairment</fullName>
+                <default>false</default>
+                <label>Hearing or Visual Impairment</label>
+            </value>
+            <value>
+                <fullName>Indebtedness</fullName>
+                <default>false</default>
+                <label>Indebtedness</label>
+            </value>
+            <value>
+                <fullName>Long-term Illness</fullName>
+                <default>false</default>
+                <label>Long-term Illness</label>
+            </value>
+            <value>
+                <fullName>Mental Health</fullName>
+                <default>false</default>
+                <label>Mental Health</label>
+            </value>
+            <value>
+                <fullName>Mental Capacity</fullName>
+                <default>false</default>
+                <label>Mental Capacity</label>
+            </value>
+            <value>
+                <fullName>Speaks Foreign Language</fullName>
+                <default>false</default>
+                <label>Speaks Foreign Language</label>
+            </value>
+            <value>
+                <fullName>Stress</fullName>
+                <default>false</default>
+                <label>Stress</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

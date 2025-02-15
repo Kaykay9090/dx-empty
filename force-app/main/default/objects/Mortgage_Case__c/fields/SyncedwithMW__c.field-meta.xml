@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SyncedwithMW__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>If record is being created in Salesforce not yest synced with MW and if not record created by MW and it&apos;s synced</description>
+    <inlineHelpText>Records synced with Middleware</inlineHelpText>
+    <label>SyncedwithMW</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

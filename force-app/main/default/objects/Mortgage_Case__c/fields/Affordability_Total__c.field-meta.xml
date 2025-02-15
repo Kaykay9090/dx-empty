@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Affordability_Total__c</fullName>
+    <deprecated>false</deprecated>
+    <formula>Children_Expenses__c + Expenditure_Expenses__c + Household_Expenses__c + Lifestyle_Expenses__c + Living_Expenses__c + Transport_Expenses__c + Widget_Children_Value__c + Widget_Expenditure_Value__c + Widget_Household_Value__c + Widget_Lifestyle_Value__c + Widget_Living_Value__c + Widget_Transport_Value__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Affordability Total</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Investment_type__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Investment type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bank account</fullName>
+                <default>false</default>
+                <label>Bank account</label>
+            </value>
+            <value>
+                <fullName>Bond, Cash</fullName>
+                <default>false</default>
+                <label>Bond, Cash</label>
+            </value>
+            <value>
+                <fullName>Guaranteed investment cash</fullName>
+                <default>false</default>
+                <label>Guaranteed investment cash</label>
+            </value>
+            <value>
+                <fullName>ISA</fullName>
+                <default>false</default>
+                <label>ISA</label>
+            </value>
+            <value>
+                <fullName>ISA transfer</fullName>
+                <default>false</default>
+                <label>ISA transfer</label>
+            </value>
+            <value>
+                <fullName>Shares</fullName>
+                <default>false</default>
+                <label>Shares</label>
+            </value>
+            <value>
+                <fullName>Unit trust</fullName>
+                <default>false</default>
+                <label>Unit trust</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

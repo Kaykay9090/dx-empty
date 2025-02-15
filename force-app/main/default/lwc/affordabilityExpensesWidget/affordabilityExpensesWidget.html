@@ -1,0 +1,88 @@
+<template>
+    <template if:true={hasAffordabilityRecords}>
+        <lightning-card title="Affordability Expense">
+            <lightning-accordion allow-multiple-sections-open active-section-name="">
+                <lightning-accordion-section name="Household" label={householdLabel}>
+                    <!-- Mortgage Rent -->
+                    <lightning-input data-id="mortgageRent" label="Mortgage Rent" value={mortgageCaseRecord.Mortgage_Rent_Sum__c} type="number" step="0.01" min="0" required></lightning-input>
+                    <!-- Council Tax -->
+                    <lightning-input data-id="councilTax" label="Council Tax" value={mortgageCaseRecord.Council_Tax_Sum__c} type="number" step="0.01" min="0" required></lightning-input>
+                    <!-- Utilities -->
+                    <lightning-input data-id="utilities" label="Utilities" value={mortgageCaseRecord.Utilities_Sum__c} type="number" step="0.01" min="0" required></lightning-input>
+                </lightning-accordion-section>
+
+                <lightning-accordion-section name="Living" label={livingLabel}>
+                    <!-- Clothing -->
+                    <lightning-input data-id="clothing" label="Clothing" value={mortgageCaseRecord.Clothing_Sum__c} style="margin-top: 10px;" type="number" step="0.01" min="0" required></lightning-input>
+                    <!-- Groceries -->
+                    <lightning-input data-id="groceries" label="Groceries" value={mortgageCaseRecord.Groceries_Sum__c} style="margin-top: 10px;" type="number" step="0.01" min="0" required></lightning-input>
+                    <!-- TV/Internet Communication -->
+                    <lightning-input data-id="tvinternetcomm" label="TV/Internet Communication" value={mortgageCaseRecord.TV_Internet_Communication_Sum__c} style="margin-top: 10px;" type="number" step="0.01" min="0" required></lightning-input>
+                </lightning-accordion-section>
+
+                <lightning-accordion-section name="Lifestyle" label={lifestyleLabel}>
+                    <!-- Leisure -->
+                    <lightning-input data-id="leisure" label="Leisure" value={mortgageCaseRecord.Leisure_Sum__c} style="margin-top: 10px;" type="number" step="0.01" min="0" required></lightning-input>
+                    <!-- Entertainment -->
+                    <lightning-input data-id="entertainment" label="Entertainment" value={mortgageCaseRecord.Entertainment_Sum__c} style="margin-top: 10px;" type="number" step="0.01" min="0" required></lightning-input>
+                    <!-- Gambling -->
+                    <lightning-input data-id="gambling" label="Gambling" value={mortgageCaseRecord.Gambling_Sum__c} style="margin-top: 10px;" type="number" step="0.01" min="0" required></lightning-input>
+                    <!-- Insurances -->
+                    <lightning-input data-id="insurances" label="Insurances" value={mortgageCaseRecord.Insurances_Sum__c} style="margin-top: 10px;" type="number" step="0.01" min="0" required></lightning-input>
+                    <!-- Investments -->
+                    <lightning-input data-id="investments" label="Investments" value={mortgageCaseRecord.Investments_Sum__c} style="margin-top: 10px;" type="number" step="0.01" min="0" required></lightning-input>
+                    <!-- Sports -->
+                    <lightning-input data-id="sports" label="Sports" value={mortgageCaseRecord.Sports_Sum__c} style="margin-top: 10px;" type="number" step="0.01" min="0" required></lightning-input>
+                    <!-- Travel -->
+                    <lightning-input data-id="travel" label="Travel" value={mortgageCaseRecord.Travel_Sum__c} style="margin-top: 10px;" type="number" step="0.01" min="0" required></lightning-input>
+                </lightning-accordion-section>
+
+                <lightning-accordion-section name="Transport" label={transportLabel}>
+                    <!-- Transport Travel -->
+                    <lightning-input data-id="transporttravel" label="Transport Travel" value={mortgageCaseRecord.Transport_Travel_Sum__c} style="margin-top: 10px;" type="number" step="0.01" min="0" required></lightning-input>
+                </lightning-accordion-section>
+
+                <lightning-accordion-section name="Children" label={childrenLabel}>
+                    <!-- Schooling -->
+                    <lightning-input data-id="schooling" label="Schooling" value={mortgageCaseRecord.Schooling_Sum__c} style="margin-top: 10px;" type="number" step="0.01" min="0" required></lightning-input>          
+                </lightning-accordion-section>
+                
+            </lightning-accordion>
+
+            <template if:true={hasAffordabilityRecords}>
+                <div class="slds-m-top_medium slds-text-align_right" style="margin-right: 20px;">
+                    <!-- <lightning-button label="More" variant="brand" onclick={showModalPopup}></lightning-button> -->
+                    <lightning-button label="Update" variant="brand" onclick={handleSave}></lightning-button>
+                </div>
+            </template>
+
+            <template if:false={hasAffordabilityRecords}>
+                <div class="slds-m-top_medium slds-text-align_right" style="margin-right: 20px;">
+                    <!-- <lightning-button label="More" variant="brand" onclick={showModalPopup}></lightning-button> -->
+                    <lightning-button label="Update" variant="brand" onclick={handleSave} disabled></lightning-button>
+                </div>
+            </template>
+        </lightning-card>
+
+        <c-util-modal 
+            show-modal={showModal} 
+            show-positive={showPositiveButton}
+            positive-button-label={positiveButtonLabel} 
+            show-negative={showNegativeButton}
+            negative-button-label={negativeButtonLabel}
+            onnegative={closeModal}
+            onclose={closeModal}
+            header={header}
+            mc-record={recordId}
+            triggered-record={triggeredRecord}
+            body-content={bodyContent}
+            affordability-records={affordabilityRecords}>
+        </c-util-modal>
+    </template>
+
+    <template if:false={hasAffordabilityRecords}>
+        <lightning-card title="Affordability Expense" icon-name="standard:money">
+            <p style="text-align: center;">No Affordability records to display metrics</p>
+        </lightning-card>        
+    </template>
+</template>

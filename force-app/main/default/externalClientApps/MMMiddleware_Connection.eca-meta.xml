@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExternalClientApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>girish@mortgagementors.co.uk</contactEmail>
+    <distributionState>Packaged</distributionState>
+    <isProtected>false</isProtected>
+    <label>MMMiddleware_Connection</label>
+    <orgScopedExternalApp>00DWU00000BN0aT:MMMiddleware_Connection</orgScopedExternalApp>
+</ExternalClientApplication>

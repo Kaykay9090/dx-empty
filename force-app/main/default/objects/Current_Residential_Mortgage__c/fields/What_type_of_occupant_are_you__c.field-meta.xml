@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>What_type_of_occupant_are_you__c</fullName>
+    <deprecated>false</deprecated>
+    <label>What type of occupant are you?</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Homeowner with mortgage</fullName>
+                <default>false</default>
+                <label>Homeowner with mortgage</label>
+            </value>
+            <value>
+                <fullName>Homeowner without mortgage</fullName>
+                <default>false</default>
+                <label>Homeowner without mortgage</label>
+            </value>
+            <value>
+                <fullName>Tenant</fullName>
+                <default>false</default>
+                <label>Tenant</label>
+            </value>
+            <value>
+                <fullName>Living with family</fullName>
+                <default>false</default>
+                <label>Living with family</label>
+            </value>
+            <value>
+                <fullName>Living with parents</fullName>
+                <default>false</default>
+                <label>Living with parents</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

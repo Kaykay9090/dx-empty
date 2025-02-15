@@ -1,0 +1,54 @@
+<aura:component controller="MWDataSync"
+    implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction"
+    access="global">
+
+    <!-- attributes -->
+    <aura:attribute name="data" type="Object" />
+    <aura:attribute name="columns" type="List" />
+    <aura:attribute name="selectedProducts" type="List" />
+    <aura:attribute name="selectedRowsCount" type="Integer" default="0" />
+    <aura:attribute name="maxRowSelection" type="Integer" default="5" />
+
+    <aura:attribute name="sortDirection" type="String" default="asc" />
+    <aura:attribute name="defaultSortDirection" type="String" default="asc" />
+    <aura:attribute name="sortedBy" type="String" />
+
+    <aura:attribute name="loaded" type="Boolean" default="false" />
+
+    <!-- <aura:set attribute="selectedRows" value="{!v.selectedProducts}" /> -->
+
+    <!-- handlers-->
+    <aura:handler name="init" value="{! this }" action="{! c.init }" />
+    <aura:handler name="render" value="{! this }" action="{! c.render }" />
+
+    <!-- Brand variant: Identifies the primary action in a group of buttons -->
+    <div class="abc">
+        <lightning:button variant="brand" label="Save Selected Products"
+            title="SaveSelectedProducts" onclick="{! c.handleAddProdctsToMortgageCase }" />
+    </div>
+
+    <aura:if isTrue="{!v.loaded}">
+
+        <lightning:datatable
+            keyField="id"
+            columns="{!v.columns }"
+            data="{!v.data}"
+            hideCheckBoxColumn="true"
+            defaultSortDirection="{!v.defaultSortDirection}"
+            sortedDirection="{!v.sortDirection}"
+            sortedBy="{!v.sortedBy}"
+            onsort="{!c.handleSort}"
+            onrowselection="{!c.handleRowSelection}">
+
+            <aura:set attribute="selectedRows" value="{!v.selectedProducts}" />
+
+        </lightning:datatable>
+        <aura:set attribute="else">
+            <!-- Content to display when someBoolean is false -->
+            <div class="spinner">
+                <lightning:spinner alternativeText="Loading" />
+            </div>
+        </aura:set>
+    </aura:if>
+
+</aura:component>

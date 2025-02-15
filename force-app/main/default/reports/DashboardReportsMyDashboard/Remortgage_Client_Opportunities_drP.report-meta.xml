@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Mortgage_Case__c$MortgageType__c</field>
+    </columns>
+    <columns>
+        <field>Mortgage_Case__c$Mortgage_property_address_line1__c</field>
+    </columns>
+    <columns>
+        <field>Mortgage_Case__c$Mortgage_property_address_line2__c</field>
+    </columns>
+    <columns>
+        <field>Mortgage_Case__c$Mortgage_property_address_city__c</field>
+    </columns>
+    <columns>
+        <field>Mortgage_Case__c$Mortgage_property_address_postcode__c</field>
+    </columns>
+    <description>New</description>
+    <format>Tabular</format>
+    <name>New : Remortgage Client Opportunities</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Mortgage_Case__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Mortgage_Case__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

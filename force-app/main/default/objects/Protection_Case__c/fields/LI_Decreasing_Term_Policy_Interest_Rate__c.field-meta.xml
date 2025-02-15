@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LI_Decreasing_Term_Policy_Interest_Rate__c</fullName>
+    <deprecated>false</deprecated>
+    <inlineHelpText>Life insurance Decreasing Term Policy Interest Rate</inlineHelpText>
+    <label>LI Decreasing Term Policy Interest Rate</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Employment_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Employment Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Employed</fullName>
+                <default>false</default>
+                <label>Employed</label>
+            </value>
+            <value>
+                <fullName>Self employed</fullName>
+                <default>false</default>
+                <label>Self employed</label>
+            </value>
+            <value>
+                <fullName>Contractor</fullName>
+                <default>false</default>
+                <label>Contractor</label>
+            </value>
+            <value>
+                <fullName>Retired</fullName>
+                <default>false</default>
+                <label>Retired</label>
+            </value>
+            <value>
+                <fullName>Homemaker</fullName>
+                <default>false</default>
+                <label>Homemaker</label>
+            </value>
+            <value>
+                <fullName>Student</fullName>
+                <default>false</default>
+                <label>Student</label>
+            </value>
+            <value>
+                <fullName>Unemployed</fullName>
+                <default>false</default>
+                <label>Unemployed</label>
+            </value>
+            <value>
+                <fullName>Fixed term contractor</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Fixed term contractor</label>
+            </value>
+            <value>
+                <fullName>Permanent</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Permanent</label>
+            </value>
+            <value>
+                <fullName>Piece work</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Piece work</label>
+            </value>
+            <value>
+                <fullName>Sub term contractor fixed term</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sub term contractor fixed term</label>
+            </value>
+            <value>
+                <fullName>Sub term contractor open ended</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sub term contractor open ended</label>
+            </value>
+            <value>
+                <fullName>Temporary or agency</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Temporary or agency</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

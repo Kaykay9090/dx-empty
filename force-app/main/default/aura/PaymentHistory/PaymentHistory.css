@@ -1,0 +1,77 @@
+.THIS .slds-table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    border-collapse: collapse;
+}
+
+.THIS th,
+.THIS td {
+    padding: 0.5rem;
+    border: 1px solid #d8dde6;
+}
+
+.THIS .gray-background {
+    background-color: #ccc; /* Apply a gray background */
+  }
+
+
+  .THIS .legend {
+    font-family: Arial, sans-serif;
+    list-style: none; /* Removes default list styling */
+    padding: 0; /* Removes default padding */
+}
+.THIS .legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px; /* Adds space between items */
+}
+.THIS .legend-box {
+    width: 28px;
+    height: 24px;
+    display: inline-block;
+    margin-right: 10px; /* Space between the box and text */
+    text-align: center;
+    line-height: 20px; /* Centers the text vertically */
+    color: white;
+    font-size: 14px;
+}
+/* Specific colors for different types of boxes */
+.THIS .yellow { background-color: yellow; }
+.THIS .blue { background-color: blue; }
+.THIS .amber { background-color: #FFBF00; }
+.THIS .green { background-color: green; }
+.THIS .red { background-color: red; }
+.THIS .orange { background-color: orange; }
+.THIS .black { background-color: black; }
+.THIS .white { background-color: white; }
+
+.THIS .green-box {
+    color: white;
+    background-color: green;
+}
+
+.THIS .blue-box {
+    color: white;
+    background-color: blue;
+}
+
+.THIS .amber-box {
+    color: white;
+    background-color: #FFBF00;
+}
+
+.THIS .orange-box {
+    color: white;
+    background-color: orange;
+}
+
+.THIS .red-box {
+    color: white;
+    background-color: red;
+}
+
+.THIS .gray-box {
+    color: white;
+    background-color: gray;
+}

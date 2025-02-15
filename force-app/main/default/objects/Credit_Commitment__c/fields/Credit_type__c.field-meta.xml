@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Credit_type__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Type of finance</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Credit card</fullName>
+                <default>false</default>
+                <label>Credit card</label>
+            </value>
+            <value>
+                <fullName>Unsecured Loan</fullName>
+                <default>false</default>
+                <label>Unsecured Loan</label>
+            </value>
+            <value>
+                <fullName>Basic Bank Account</fullName>
+                <default>false</default>
+                <label>Basic Bank Account</label>
+            </value>
+            <value>
+                <fullName>Bridging Finance</fullName>
+                <default>false</default>
+                <label>Bridging Finance</label>
+            </value>
+            <value>
+                <fullName>Budget</fullName>
+                <default>false</default>
+                <label>Budget</label>
+            </value>
+            <value>
+                <fullName>Buy To Let Mortgage</fullName>
+                <default>false</default>
+                <label>Buy To Let Mortgage</label>
+            </value>
+            <value>
+                <fullName>Charge Card</fullName>
+                <default>false</default>
+                <label>Charge Card</label>
+            </value>
+            <value>
+                <fullName>Communications Supplier</fullName>
+                <default>false</default>
+                <label>Communications Supplier</label>
+            </value>
+            <value>
+                <fullName>Consolidated Debt</fullName>
+                <default>false</default>
+                <label>Consolidated Debt</label>
+            </value>
+            <value>
+                <fullName>Current Account</fullName>
+                <default>false</default>
+                <label>Current Account</label>
+            </value>
+            <value>
+                <fullName>Overdraft</fullName>
+                <default>false</default>
+                <label>Overdraft</label>
+            </value>
+            <value>
+                <fullName>Fixed Term</fullName>
+                <default>false</default>
+                <label>Fixed Term</label>
+            </value>
+            <value>
+                <fullName>Fixed Term Deferred</fullName>
+                <default>false</default>
+                <label>Fixed Term Deferred</label>
+            </value>
+            <value>
+                <fullName>Green Deals</fullName>
+                <default>false</default>
+                <label>Green Deals</label>
+            </value>
+            <value>
+                <fullName>Hire purchase</fullName>
+                <default>false</default>
+                <label>Hire purchase</label>
+            </value>
+            <value>
+                <fullName>Home Lending</fullName>
+                <default>false</default>
+                <label>Home Lending</label>
+            </value>
+            <value>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+                <label>Insurance</label>
+            </value>
+            <value>
+                <fullName>Insurance Motor</fullName>
+                <default>false</default>
+                <label>Insurance Motor</label>
+            </value>
+            <value>
+                <fullName>Local Authority Rental</fullName>
+                <default>false</default>
+                <label>Local Authority Rental</label>
+            </value>
+            <value>
+                <fullName>Mail Order</fullName>
+                <default>false</default>
+                <label>Mail Order</label>
+            </value>
+            <value>
+                <fullName>Option Account</fullName>
+                <default>false</default>
+                <label>Option Account</label>
+            </value>
+            <value>
+                <fullName>Payday Loans</fullName>
+                <default>false</default>
+                <label>Payday Loans</label>
+            </value>
+            <value>
+                <fullName>Property Rental</fullName>
+                <default>false</default>
+                <label>Property Rental</label>
+            </value>
+            <value>
+                <fullName>Public Utility</fullName>
+                <default>false</default>
+                <label>Public Utility</label>
+            </value>
+            <value>
+                <fullName>Finance Lease Rental</fullName>
+                <default>false</default>
+                <label>Finance Lease Rental</label>
+            </value>
+            <value>
+                <fullName>Operating Lease</fullName>
+                <default>false</default>
+                <label>Operating Lease</label>
+            </value>
+            <value>
+                <fullName>Rental</fullName>
+                <default>false</default>
+                <label>Rental</label>
+            </value>
+            <value>
+                <fullName>Flexible Mortgage</fullName>
+                <default>false</default>
+                <label>Flexible Mortgage</label>
+            </value>
+            <value>
+                <fullName>Mortgage</fullName>
+                <default>false</default>
+                <label>Mortgage</label>
+            </value>
+            <value>
+                <fullName>Secured loan</fullName>
+                <default>false</default>
+                <label>Secured loan</label>
+            </value>
+            <value>
+                <fullName>Social Housing Rental</fullName>
+                <default>false</default>
+                <label>Social Housing Rental</label>
+            </value>
+            <value>
+                <fullName>Student loan</fullName>
+                <default>false</default>
+                <label>Student loan</label>
+            </value>
+            <value>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+                <label>Unknown</label>
+            </value>
+            <value>
+                <fullName>Xmas Club</fullName>
+                <default>false</default>
+                <label>Xmas Club</label>
+            </value>
+            <value>
+                <fullName>Car loan</fullName>
+                <default>false</default>
+                <label>Car loan</label>
+            </value>
+            <value>
+                <fullName>Private loan</fullName>
+                <default>false</default>
+                <label>Private loan</label>
+            </value>
+            <value>
+                <fullName>Store card</fullName>
+                <default>false</default>
+                <label>Store card</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

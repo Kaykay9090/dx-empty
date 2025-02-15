@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Income</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Incomes</value>
+    </caseValues>
+    <layouts>
+        <layout>Employment Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Deductions from salary slip</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Employed</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>General</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>How long is left on your contract?</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>If you are an umbrella or fixed term contractor please tell us your income</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Other Income</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Self Employed</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Sole Trader</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

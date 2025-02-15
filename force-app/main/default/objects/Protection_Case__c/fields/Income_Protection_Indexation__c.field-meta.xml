@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Income_Protection_Indexation__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Income Protection Indexation</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Level</fullName>
+                <default>false</default>
+                <label>Level</label>
+            </value>
+            <value>
+                <fullName>RPI</fullName>
+                <default>false</default>
+                <label>RPI</label>
+            </value>
+            <value>
+                <fullName>Three</fullName>
+                <default>false</default>
+                <label>Three</label>
+            </value>
+            <value>
+                <fullName>Five</fullName>
+                <default>false</default>
+                <label>Five</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

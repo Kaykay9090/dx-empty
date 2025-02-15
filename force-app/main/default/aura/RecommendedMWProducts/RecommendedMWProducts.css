@@ -1,0 +1,14 @@
+.THIS.abc {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 0.5rem;
+}
+
+.THIS.spinner{
+    position: center;
+    display: inline-block;
+    margin-left: 15px;
+    width: 55px;
+    vertical-align: middle;
+    white-space: nowrap;
+}

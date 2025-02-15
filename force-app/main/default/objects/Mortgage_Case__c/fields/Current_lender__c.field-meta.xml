@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Current_lender__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Current Lender</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ACCORD</fullName>
+                <default>false</default>
+                <label>Accord</label>
+            </value>
+            <value>
+                <fullName>AFFIRMATIVE</fullName>
+                <default>false</default>
+                <label>Affirmative</label>
+            </value>
+            <value>
+                <fullName>AIB</fullName>
+                <default>false</default>
+                <label>AIB</label>
+            </value>
+            <value>
+                <fullName>AL_RAYAN</fullName>
+                <default>false</default>
+                <label>Al Rayan Bank</label>
+            </value>
+            <value>
+                <fullName>ALDERMORE</fullName>
+                <default>false</default>
+                <label>Aldermore</label>
+            </value>
+            <value>
+                <fullName>ATOM</fullName>
+                <default>false</default>
+                <label>Digital Mortgages by Atom Bank</label>
+            </value>
+            <value>
+                <fullName>AXIS_BANK</fullName>
+                <default>false</default>
+                <label>Axis Bank</label>
+            </value>
+            <value>
+                <fullName>BANK_CHINA</fullName>
+                <default>false</default>
+                <label>Bank of China</label>
+            </value>
+            <value>
+                <fullName>BANK_OF_INDIA</fullName>
+                <default>false</default>
+                <label>State Bank of India</label>
+            </value>
+            <value>
+                <fullName>BANKOFIRELAND</fullName>
+                <default>false</default>
+                <label>Bank of Ireland</label>
+            </value>
+            <value>
+                <fullName>BARCLAYS</fullName>
+                <default>false</default>
+                <label>Barclays</label>
+            </value>
+            <value>
+                <fullName>BATH</fullName>
+                <default>false</default>
+                <label>Bath Building Society</label>
+            </value>
+            <value>
+                <fullName>BEVERLY</fullName>
+                <default>false</default>
+                <label>Beverly</label>
+            </value>
+            <value>
+                <fullName>BLUESTONE</fullName>
+                <default>false</default>
+                <label>Bluestone Mortgages</label>
+            </value>
+            <value>
+                <fullName>BRIGHTSTAR</fullName>
+                <default>false</default>
+                <label>Brightstar</label>
+            </value>
+            <value>
+                <fullName>BUCKINGHAMSHIRE</fullName>
+                <default>false</default>
+                <label>Buckinghamshire Building Society</label>
+            </value>
+            <value>
+                <fullName>BUILD_LOAN</fullName>
+                <default>false</default>
+                <label>BuildLoan</label>
+            </value>
+            <value>
+                <fullName>CAMBRIDGE</fullName>
+                <default>false</default>
+                <label>Cambridge Building Society</label>
+            </value>
+            <value>
+                <fullName>CAMBRIDGECOUNTIES</fullName>
+                <default>false</default>
+                <label>Cambridge &amp; Counties Bank</label>
+            </value>
+            <value>
+                <fullName>CASTLE_TRUST</fullName>
+                <default>false</default>
+                <label>Castle Trust</label>
+            </value>
+            <value>
+                <fullName>CENTRAL_TRUST</fullName>
+                <default>false</default>
+                <label>Central Trust</label>
+            </value>
+            <value>
+                <fullName>CHELSEA</fullName>
+                <default>false</default>
+                <label>Chelsea</label>
+            </value>
+            <value>
+                <fullName>CHORLEY</fullName>
+                <default>false</default>
+                <label>Chorley Building Society</label>
+            </value>
+            <value>
+                <fullName>CLYDESDALE</fullName>
+                <default>false</default>
+                <label>Clydesdale</label>
+            </value>
+            <value>
+                <fullName>COOPERATIVE</fullName>
+                <default>false</default>
+                <label>Platform</label>
+            </value>
+            <value>
+                <fullName>COVENTRY</fullName>
+                <default>false</default>
+                <label>Coventry Building Society</label>
+            </value>
+            <value>
+                <fullName>CUMBERLAND</fullName>
+                <default>false</default>
+                <label>Cumberland Building Society</label>
+            </value>
+            <value>
+                <fullName>DANSKE</fullName>
+                <default>false</default>
+                <label>Danske Bank</label>
+            </value>
+            <value>
+                <fullName>DARLINGTON</fullName>
+                <default>false</default>
+                <label>Darlington Building Society</label>
+            </value>
+            <value>
+                <fullName>DUDLEY</fullName>
+                <default>false</default>
+                <label>Dudley Building Society</label>
+            </value>
+            <value>
+                <fullName>ECOLOGY</fullName>
+                <default>false</default>
+                <label>Ecology Building Society</label>
+            </value>
+            <value>
+                <fullName>ESBS</fullName>
+                <default>false</default>
+                <label>Earl Shilton Building Society</label>
+            </value>
+            <value>
+                <fullName>EVEN</fullName>
+                <default>false</default>
+                <label>Even</label>
+            </value>
+            <value>
+                <fullName>FAMILY</fullName>
+                <default>false</default>
+                <label>Family Building Society</label>
+            </value>
+            <value>
+                <fullName>FIRST_DIRECT</fullName>
+                <default>false</default>
+                <label>First Direct</label>
+            </value>
+            <value>
+                <fullName>FLEET</fullName>
+                <default>false</default>
+                <label>Fleet Mortgages</label>
+            </value>
+            <value>
+                <fullName>FOUNDATION</fullName>
+                <default>false</default>
+                <label>Foundation Home Loans</label>
+            </value>
+            <value>
+                <fullName>FTB</fullName>
+                <default>false</default>
+                <label>First Trust Bank</label>
+            </value>
+            <value>
+                <fullName>FURNESS</fullName>
+                <default>false</default>
+                <label>Furness Building Society</label>
+            </value>
+            <value>
+                <fullName>GATEHOUSE</fullName>
+                <default>false</default>
+                <label>Gatehouse</label>
+            </value>
+            <value>
+                <fullName>GENERATIONHOME</fullName>
+                <default>false</default>
+                <label>Generation Home</label>
+            </value>
+            <value>
+                <fullName>HABITO</fullName>
+                <default>false</default>
+                <label>Habito</label>
+            </value>
+            <value>
+                <fullName>HALIFAX</fullName>
+                <default>false</default>
+                <label>Halifax</label>
+            </value>
+            <value>
+                <fullName>HAMPSHIRE</fullName>
+                <default>false</default>
+                <label>Hampshire Trust Bank</label>
+            </value>
+            <value>
+                <fullName>HANLEY</fullName>
+                <default>false</default>
+                <label>Hanley Economic Building Society</label>
+            </value>
+            <value>
+                <fullName>HARPENDEN</fullName>
+                <default>false</default>
+                <label>Harpenden</label>
+            </value>
+            <value>
+                <fullName>HINCKLEY</fullName>
+                <default>false</default>
+                <label>Hinckley &amp; Rugby Building Society</label>
+            </value>
+            <value>
+                <fullName>HODGE</fullName>
+                <default>false</default>
+                <label>Hodge</label>
+            </value>
+            <value>
+                <fullName>HSBC</fullName>
+                <default>false</default>
+                <label>HSBC</label>
+            </value>
+            <value>
+                <fullName>INTERBAY</fullName>
+                <default>false</default>
+                <label>Interbay</label>
+            </value>
+            <value>
+                <fullName>INVESTEC</fullName>
+                <default>false</default>
+                <label>Investec</label>
+            </value>
+            <value>
+                <fullName>IPSWICH</fullName>
+                <default>false</default>
+                <label>Suffolk Building Society</label>
+            </value>
+            <value>
+                <fullName>KENSINGTON</fullName>
+                <default>false</default>
+                <label>Kensington</label>
+            </value>
+            <value>
+                <fullName>KENTRELIANCE</fullName>
+                <default>false</default>
+                <label>Kent Reliance</label>
+            </value>
+            <value>
+                <fullName>KEYSTONE</fullName>
+                <default>false</default>
+                <label>Keystone</label>
+            </value>
+            <value>
+                <fullName>LANDBAY</fullName>
+                <default>false</default>
+                <label>Landbay</label>
+            </value>
+            <value>
+                <fullName>LEEDS</fullName>
+                <default>false</default>
+                <label>Leeds Building Society</label>
+            </value>
+            <value>
+                <fullName>LEEK</fullName>
+                <default>false</default>
+                <label>Leek United Building Society</label>
+            </value>
+            <value>
+                <fullName>LENDINVEST</fullName>
+                <default>false</default>
+                <label>Lendinvest</label>
+            </value>
+            <value>
+                <fullName>LIVEMORE</fullName>
+                <default>false</default>
+                <label>LiveMore</label>
+            </value>
+            <value>
+                <fullName>LLOYDS</fullName>
+                <default>false</default>
+                <label>Lloyds Bank</label>
+            </value>
+            <value>
+                <fullName>LOUGHBOROUGH</fullName>
+                <default>false</default>
+                <label>Loughborough Building Society</label>
+            </value>
+            <value>
+                <fullName>LV=</fullName>
+                <default>false</default>
+                <label>LV=</label>
+            </value>
+            <value>
+                <fullName>MANSFIELD</fullName>
+                <default>false</default>
+                <label>Mansfield Building Society</label>
+            </value>
+            <value>
+                <fullName>MARKETHARBOROUGH</fullName>
+                <default>false</default>
+                <label>Market Harborough</label>
+            </value>
+            <value>
+                <fullName>MARSDEN</fullName>
+                <default>false</default>
+                <label>Marsden Building Society</label>
+            </value>
+            <value>
+                <fullName>MASTHAVEN</fullName>
+                <default>false</default>
+                <label>Masthaven</label>
+            </value>
+            <value>
+                <fullName>MBSLTD</fullName>
+                <default>false</default>
+                <label>MBS Lending Ltd</label>
+            </value>
+            <value>
+                <fullName>MELTON</fullName>
+                <default>false</default>
+                <label>The Melton Building Society</label>
+            </value>
+            <value>
+                <fullName>MERCANTILE</fullName>
+                <default>false</default>
+                <label>Mercantile Trust</label>
+            </value>
+            <value>
+                <fullName>METRO</fullName>
+                <default>false</default>
+                <label>Metro</label>
+            </value>
+            <value>
+                <fullName>MINT_BRIDGING</fullName>
+                <default>false</default>
+                <label>Mint Bridging</label>
+            </value>
+            <value>
+                <fullName>MOLO</fullName>
+                <default>false</default>
+                <label>Molo</label>
+            </value>
+            <value>
+                <fullName>MONMOUTHSHIRE</fullName>
+                <default>false</default>
+                <label>Monmouthshire Building Society</label>
+            </value>
+            <value>
+                <fullName>MORE_2_LIFE</fullName>
+                <default>false</default>
+                <label>More 2 Life</label>
+            </value>
+            <value>
+                <fullName>MORTGAGE_LENDER</fullName>
+                <default>false</default>
+                <label>The Mortgage Lender</label>
+            </value>
+            <value>
+                <fullName>MSBANK</fullName>
+                <default>false</default>
+                <label>M&amp;S Bank</label>
+            </value>
+            <value>
+                <fullName>MT_FINANCE</fullName>
+                <default>false</default>
+                <label>MT Finance</label>
+            </value>
+            <value>
+                <fullName>NATIONWIDE</fullName>
+                <default>false</default>
+                <label>Nationwide BS</label>
+            </value>
+            <value>
+                <fullName>NATWEST</fullName>
+                <default>false</default>
+                <label>NatWest</label>
+            </value>
+            <value>
+                <fullName>NEWBURY</fullName>
+                <default>false</default>
+                <label>Newbury Building Society</label>
+            </value>
+            <value>
+                <fullName>NEWCASTLE</fullName>
+                <default>false</default>
+                <label>Newcastle Building Society</label>
+            </value>
+            <value>
+                <fullName>NORTON</fullName>
+                <default>false</default>
+                <label>Norton</label>
+            </value>
+            <value>
+                <fullName>NOTTINGHAM</fullName>
+                <default>false</default>
+                <label>Nottingham Building Society</label>
+            </value>
+            <value>
+                <fullName>OAKNORTH</fullName>
+                <default>false</default>
+                <label>OakNorth Commercial</label>
+            </value>
+            <value>
+                <fullName>OCTANECAPITAL</fullName>
+                <default>false</default>
+                <label>Octane capital</label>
+            </value>
+            <value>
+                <fullName>ONE_FAMILY</fullName>
+                <default>false</default>
+                <label>One Family</label>
+            </value>
+            <value>
+                <fullName>PARAGON</fullName>
+                <default>false</default>
+                <label>Paragon Bank Plc</label>
+            </value>
+            <value>
+                <fullName>PENRITH</fullName>
+                <default>false</default>
+                <label>Penrith Building Society</label>
+            </value>
+            <value>
+                <fullName>PEPPERMONEY</fullName>
+                <default>false</default>
+                <label>Pepper Money</label>
+            </value>
+            <value>
+                <fullName>POSTOFFICE</fullName>
+                <default>false</default>
+                <label>PostOffice</label>
+            </value>
+            <value>
+                <fullName>PRECISE</fullName>
+                <default>false</default>
+                <label>Precise Mortgages</label>
+            </value>
+            <value>
+                <fullName>PRESTIGE</fullName>
+                <default>false</default>
+                <label>Prestige</label>
+            </value>
+            <value>
+                <fullName>PRINCIPALITY</fullName>
+                <default>false</default>
+                <label>Principality</label>
+            </value>
+            <value>
+                <fullName>PROGRESSIVE</fullName>
+                <default>false</default>
+                <label>Progressive</label>
+            </value>
+            <value>
+                <fullName>PROPORTUNITY</fullName>
+                <default>false</default>
+                <label>Proportunity</label>
+            </value>
+            <value>
+                <fullName>PURE_RETIREMENT</fullName>
+                <default>false</default>
+                <label>Pure Retirement</label>
+            </value>
+            <value>
+                <fullName>ROYAL</fullName>
+                <default>false</default>
+                <label>Royal Bank Of Scotland</label>
+            </value>
+            <value>
+                <fullName>SAFFRON</fullName>
+                <default>false</default>
+                <label>Saffron</label>
+            </value>
+            <value>
+                <fullName>SANTANDER</fullName>
+                <default>false</default>
+                <label>Santander</label>
+            </value>
+            <value>
+                <fullName>SCOTTISH</fullName>
+                <default>false</default>
+                <label>Scottish Building Society</label>
+            </value>
+            <value>
+                <fullName>SCOTTISHWIDOWS</fullName>
+                <default>false</default>
+                <label>Scottish Widows</label>
+            </value>
+            <value>
+                <fullName>SECURETRUST</fullName>
+                <default>false</default>
+                <label>Secure Trust Bank</label>
+            </value>
+            <value>
+                <fullName>SHAWBROOK</fullName>
+                <default>false</default>
+                <label>Shawbrook Bank</label>
+            </value>
+            <value>
+                <fullName>SKIPTON</fullName>
+                <default>false</default>
+                <label>Skipton International</label>
+            </value>
+            <value>
+                <fullName>STAFFORD</fullName>
+                <default>false</default>
+                <label>Stafford Railway Building Society</label>
+            </value>
+            <value>
+                <fullName>SWANSEA</fullName>
+                <default>false</default>
+                <label>Swansea Building Society</label>
+            </value>
+            <value>
+                <fullName>TEACHERSBS</fullName>
+                <default>false</default>
+                <label>Teachers Building Society</label>
+            </value>
+            <value>
+                <fullName>TIPTON</fullName>
+                <default>false</default>
+                <label>Tipton &amp; Coseley Building Society</label>
+            </value>
+            <value>
+                <fullName>TOGETHER</fullName>
+                <default>false</default>
+                <label>Together</label>
+            </value>
+            <value>
+                <fullName>TSB</fullName>
+                <default>false</default>
+                <label>TSB</label>
+            </value>
+            <value>
+                <fullName>ULSTER</fullName>
+                <default>false</default>
+                <label>Ulster Bank</label>
+            </value>
+            <value>
+                <fullName>UNITEDTRUST</fullName>
+                <default>false</default>
+                <label>United Trust Bank</label>
+            </value>
+            <value>
+                <fullName>VIDAHL</fullName>
+                <default>false</default>
+                <label>Vida Homeloans</label>
+            </value>
+            <value>
+                <fullName>VIRGIN</fullName>
+                <default>false</default>
+                <label>Virgin</label>
+            </value>
+            <value>
+                <fullName>WESTBROM</fullName>
+                <default>false</default>
+                <label>WestBrom Building Society</label>
+            </value>
+            <value>
+                <fullName>WESTONE</fullName>
+                <default>false</default>
+                <label>West One</label>
+            </value>
+            <value>
+                <fullName>YBS</fullName>
+                <default>false</default>
+                <label>Yorkshire Building Society</label>
+            </value>
+            <value>
+                <fullName>ZEPHYR</fullName>
+                <default>false</default>
+                <label>Zephyr</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

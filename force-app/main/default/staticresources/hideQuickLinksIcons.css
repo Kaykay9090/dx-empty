@@ -1,0 +1,9 @@
+/* Target classes for hiding icons */
+.forceRelatedListQuickLinksContainer .themeIcon,
+.force-quick-link-container .themeIcon,
+.rlql-relatedListQuickLink .themeIcon,
+.themeIcon.slds-icon_container.slds-media__figure.slds-avatar.slds-avatar_small,
+.slds-media.slds-no-space 
+{
+    display: none !important;
+}

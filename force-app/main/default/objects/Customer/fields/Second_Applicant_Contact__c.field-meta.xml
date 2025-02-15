@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Second_Applicant_Contact__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Second Applicant Contact</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Customers (Second Applicant Contact)</relationshipLabel>
+    <relationshipName>CustomersX</relationshipName>
+    <required>false</required>
+    <type>Lookup</type>
+</CustomField>

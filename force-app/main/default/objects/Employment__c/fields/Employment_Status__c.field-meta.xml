@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Employment_Status__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Employment Status?</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Employed</fullName>
+                <default>false</default>
+                <label>Employed</label>
+            </value>
+            <value>
+                <fullName>Self-employed</fullName>
+                <default>false</default>
+                <label>Self-employed</label>
+            </value>
+            <value>
+                <fullName>Contractor</fullName>
+                <default>false</default>
+                <label>Contractor</label>
+            </value>
+            <value>
+                <fullName>Self employed</fullName>
+                <default>false</default>
+                <label>Self employed</label>
+            </value>
+            <value>
+                <fullName>Sole trader,</fullName>
+                <default>false</default>
+                <label>Sole trader,</label>
+            </value>
+            <value>
+                <fullName>Director/ shareholder less than 20%</fullName>
+                <default>false</default>
+                <label>Director/ shareholder less than 20%</label>
+            </value>
+            <value>
+                <fullName>Director/ shareholder more than 20%</fullName>
+                <default>false</default>
+                <label>Director/ shareholder more than 20%</label>
+            </value>
+            <value>
+                <fullName>Retired</fullName>
+                <default>false</default>
+                <label>Retired</label>
+            </value>
+            <value>
+                <fullName>Homemaker</fullName>
+                <default>false</default>
+                <label>Homemaker</label>
+            </value>
+            <value>
+                <fullName>Student</fullName>
+                <default>false</default>
+                <label>Student</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

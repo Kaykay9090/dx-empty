@@ -1,0 +1,61 @@
+.metric-container {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.category-container {
+    text-align: center;
+}
+
+.category-value {
+    font-weight: bold;
+    font-size: 40px;
+    font-family: verdana;
+    padding-top: 5px;
+}
+
+.view-details {
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.metric {
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+
+.metric-household {
+    color: blue;
+}
+
+.metric-living {
+    color: green;
+}
+
+.metric-lifestyle {
+    color: red;
+}
+
+.metric-transport {
+    color: brown;
+}
+
+.metric-children {
+    color: orange;
+}
+
+.metric-expenditure {
+    color: purple;
+}
+
+.refresh-text {
+    font-style: italic;
+    font-size: 0.85em;
+}
